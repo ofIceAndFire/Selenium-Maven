@@ -1,0 +1,31 @@
+<!--  "<?xml version="1.0" encoding="UTF-8"?>" -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+				<suite name = "Suite1"  >
+				
+							<test name="SampleSelenium-Maven">
+								<packages>
+										<!--  <package name="com.qa.tests.*"></package> -->
+										  <package name ="com.qa.SeleniumSessions.*"></package>
+								</packages>
+								
+							</test>
+							
+							
+							
+							
+							
+							
+							<!-- 
+							<test name="SampleSelenium-Maven1">
+							<classes>
+							<class name="SampleTest.java"></class>
+							<class name="SampleTest1.java"></class>
+							<class name="SampleTest2.java"></class>
+							</classes>
+							</test>
+							 -->
+				
+				
+				 </suite>
+
+ 
