@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.qa.SeleniumSessions","c":"NavigateScreenShot","l":"chromelogin()"},{"p":"com.qa.SeleniumSessions","c":"NavigateScreenShot","l":"getText()"},{"p":"com.qa.SeleniumSessions","c":"NavigateScreenShot","l":"NavigateScreenShot()","url":"%3Cinit%3E()"}]
