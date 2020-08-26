@@ -1,0 +1,167 @@
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.CodeBind</groupId>
+  <artifactId>SampleSelenium-Maven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+   <properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+  
+  
+  
+  <!--  "Plugins" -->
+  <!-- "Skip TestCases"  "mvn package -DSkipTests"  "or"  "mvn install -DSkipTests"-->
+   <build>
+    <plugins>
+     <plugin>
+     
+      <configuration>
+          <skipTests>false</skipTests>
+          <suiteXmlFiles>
+            <File1>src/test/resources/testng.xml</File1>
+           </suiteXmlFiles>
+         </configuration>
+       		 <groupId>org.apache.maven.plugins</groupId>
+        	 <artifactId>maven-surefire-plugin</artifactId>
+             <version>3.0.0-M4</version>
+        </plugin>
+         <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+         	  <artifactId>maven-resources-plugin</artifactId>
+              <version>3.1.0</version>
+        
+       
+         
+      </plugin>
+    </plugins>
+  </build>
+  
+  
+  <!-- "Dependencies" -->
+  <dependencies>
+  
+  				
+				  <dependency>
+				   <!-- "Selenium Dependency" -->
+				        <groupId>org.seleniumhq.selenium</groupId>
+				        <artifactId>selenium-java</artifactId>
+				        <version>3.141.59</version>
+				    </dependency>
+				    
+				  <!-- HTML Unit Driver -->  
+					<dependency>
+						    <groupId>org.seleniumhq.selenium</groupId>
+						    <artifactId>htmlunit-driver</artifactId>
+						    <version>2.26</version>
+					</dependency>
+
+			    <dependency>
+			             <groupId>commons-io</groupId>
+			    		<artifactId>commons-io</artifactId>
+			   			 <version>2.6</version>
+			    </dependency>
+			  
+			  <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+				<dependency>
+				    <groupId>com.relevantcodes</groupId>
+				    <artifactId>extentreports</artifactId>
+				    <version>2.41.2</version>
+				</dependency>
+			  
+			          <!-- 
+						<dependency>
+						  <groupId>org.testng</groupId>
+						  <artifactId>testng</artifactId>
+						  <version>6.8</version>
+						  <scope>test</scope>
+						</dependency>
+			           -->
+				
+				<dependency>
+				<!-- "TestNG Dependency" -->
+			    <groupId>org.testng</groupId>
+			    <artifactId>testng</artifactId>
+			    <version>7.0.0-beta7</version>
+			    <scope>test</scope>
+			 </dependency>
+			 
+			 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>openxml4j</artifactId>
+			<version>1.0-beta</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.6.2</version>
+			<scope>compile</scope>
+		</dependency>
+			  
+			 <!-- Sikuli Dependency for Flash Objects -->
+			 <!--
+			 <dependency>
+    			<groupId>com.sikulix</groupId>
+    			<artifactId>sikulixapi</artifactId>
+    			<version>1.1.1</version>
+    			<exclusions>
+					  <exclusion>
+					   <groupId>com.github.vidstige</groupId>
+					   <artifactId>jadb</artifactId>
+					  </exclusion>
+				 </exclusions>
+			</dependency>
+			<dependency>
+			    <groupId>io.sentry</groupId>
+			    <artifactId>sentry-android</artifactId>
+			    <version>1.7.5</version>
+			</dependency>
+			--> 
+			  
+			 
+ </dependencies> 
+ 
+</project>
