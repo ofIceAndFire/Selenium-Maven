@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Parallel Testing Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="ParallelTest(failed)">
+    <classes>
+      <class name="com.qa.SeleniumSessions.TestNGParallelTestingConcept">
+        <methods>
+          <include name="setUp"/>
+          <include name="openChromeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.SeleniumSessions.TestNGParallelTestingConcept -->
+    </classes>
+  </test> <!-- ParallelTest(failed) -->
+</suite> <!-- Failed suite [Parallel Testing Suite] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ebay site Automation Testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke Test(failed)">
+    <parameter name="UserName" value="nooraenit@gmail.com"/>
+    <parameter name="Browser" value="chrome"/>
+    <parameter name="Password" value="Noorfar123#"/>
+    <groups>
+      <run>
+        <include name="Arthimatic Operations"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.qa.SeleniumSessions.TestNGFeatures">
+        <methods>
+          <include name="div"/>
+          <include name="mul"/>
+          <include name="startService"/>
+          <include name="enterUrl"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.SeleniumSessions.TestNGFeatures -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [ebay site Automation Testing] -->
