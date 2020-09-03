@@ -1,4 +1,4 @@
-package ebay.Utilities;
+package Util;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;

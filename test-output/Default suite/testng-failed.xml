@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.SeleniumSessions.DownloadFile">
+      <class name="com.qa.SeleniumSessions.Groupsconcept_ebaySite">
         <methods>
-          <include name="downLoadTest"/>
+          <include name="validateCatogery"/>
+          <include name="loginTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.SeleniumSessions.DownloadFile -->
+      </class> <!-- com.qa.SeleniumSessions.Groupsconcept_ebaySite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
